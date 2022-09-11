@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "7158778875",
+    "project_id": "socialchat-4a71a",
+    "storage_bucket": "socialchat-4a71a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7158778875:android:318c149b2bf86298b6195e",
+        "android_client_info": {
+          "package_name": "com.example.eve_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7158778875-49htrpvee5la1vfirsps5v67aj28pbfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4SQrtN0op6ylemdhPu-_LJ_9suOEHCJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7158778875-49htrpvee5la1vfirsps5v67aj28pbfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7158778875:android:517d632b8bcb4144b6195e",
+        "android_client_info": {
+          "package_name": "com.example.flutter_sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7158778875-49htrpvee5la1vfirsps5v67aj28pbfh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4SQrtN0op6ylemdhPu-_LJ_9suOEHCJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7158778875-49htrpvee5la1vfirsps5v67aj28pbfh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

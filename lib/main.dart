@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_sample/view/home_page.dart';
+import 'package:flutter_sample/features/memes/presentation/meme_page.dart';
 
 
 
@@ -20,7 +20,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomePage()
+        home: MemePage()
     );
   }
 }

@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'cat_state.dart';
+part of 'meme_state.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,29 +15,29 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$CatState {
+mixin _$MemeState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(List<Cat> cats) success,
-    required TResult Function(String e) failed,
+    required TResult Function(List<Meme> memes) memes,
+    required TResult Function(String error) error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<Cat> cats)? success,
-    TResult Function(String e)? failed,
+    TResult Function(List<Meme> memes)? memes,
+    TResult Function(String error)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<Cat> cats)? success,
-    TResult Function(String e)? failed,
+    TResult Function(List<Meme> memes)? memes,
+    TResult Function(String error)? error,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -45,42 +45,42 @@ mixin _$CatState {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(__success value) success,
-    required TResult Function(__Failed value) failed,
+    required TResult Function(_Memes value) memes,
+    required TResult Function(_Error value) error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(__success value)? success,
-    TResult Function(__Failed value)? failed,
+    TResult Function(_Memes value)? memes,
+    TResult Function(_Error value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(__success value)? success,
-    TResult Function(__Failed value)? failed,
+    TResult Function(_Memes value)? memes,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $CatStateCopyWith<$Res> {
-  factory $CatStateCopyWith(CatState value, $Res Function(CatState) then) =
-      _$CatStateCopyWithImpl<$Res>;
+abstract class $MemeStateCopyWith<$Res> {
+  factory $MemeStateCopyWith(MemeState value, $Res Function(MemeState) then) =
+      _$MemeStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$CatStateCopyWithImpl<$Res> implements $CatStateCopyWith<$Res> {
-  _$CatStateCopyWithImpl(this._value, this._then);
+class _$MemeStateCopyWithImpl<$Res> implements $MemeStateCopyWith<$Res> {
+  _$MemeStateCopyWithImpl(this._value, this._then);
 
-  final CatState _value;
+  final MemeState _value;
   // ignore: unused_field
-  final $Res Function(CatState) _then;
+  final $Res Function(MemeState) _then;
 }
 
 /// @nodoc
@@ -91,7 +91,7 @@ abstract class _$$_InitialCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_InitialCopyWithImpl<$Res> extends _$CatStateCopyWithImpl<$Res>
+class __$$_InitialCopyWithImpl<$Res> extends _$MemeStateCopyWithImpl<$Res>
     implements _$$_InitialCopyWith<$Res> {
   __$$_InitialCopyWithImpl(_$_Initial _value, $Res Function(_$_Initial) _then)
       : super(_value, (v) => _then(v as _$_Initial));
@@ -103,11 +103,11 @@ class __$$_InitialCopyWithImpl<$Res> extends _$CatStateCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_Initial implements _Initial {
-  _$_Initial();
+  const _$_Initial();
 
   @override
   String toString() {
-    return 'CatState.initial()';
+    return 'MemeState.initial()';
   }
 
   @override
@@ -124,8 +124,8 @@ class _$_Initial implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(List<Cat> cats) success,
-    required TResult Function(String e) failed,
+    required TResult Function(List<Meme> memes) memes,
+    required TResult Function(String error) error,
   }) {
     return initial();
   }
@@ -135,8 +135,8 @@ class _$_Initial implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<Cat> cats)? success,
-    TResult Function(String e)? failed,
+    TResult Function(List<Meme> memes)? memes,
+    TResult Function(String error)? error,
   }) {
     return initial?.call();
   }
@@ -146,8 +146,8 @@ class _$_Initial implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<Cat> cats)? success,
-    TResult Function(String e)? failed,
+    TResult Function(List<Meme> memes)? memes,
+    TResult Function(String error)? error,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -161,8 +161,8 @@ class _$_Initial implements _Initial {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(__success value) success,
-    required TResult Function(__Failed value) failed,
+    required TResult Function(_Memes value) memes,
+    required TResult Function(_Error value) error,
   }) {
     return initial(this);
   }
@@ -172,8 +172,8 @@ class _$_Initial implements _Initial {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(__success value)? success,
-    TResult Function(__Failed value)? failed,
+    TResult Function(_Memes value)? memes,
+    TResult Function(_Error value)? error,
   }) {
     return initial?.call(this);
   }
@@ -183,8 +183,8 @@ class _$_Initial implements _Initial {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(__success value)? success,
-    TResult Function(__Failed value)? failed,
+    TResult Function(_Memes value)? memes,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -194,8 +194,8 @@ class _$_Initial implements _Initial {
   }
 }
 
-abstract class _Initial implements CatState {
-  factory _Initial() = _$_Initial;
+abstract class _Initial implements MemeState {
+  const factory _Initial() = _$_Initial;
 }
 
 /// @nodoc
@@ -206,7 +206,7 @@ abstract class _$$_LoadingCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_LoadingCopyWithImpl<$Res> extends _$CatStateCopyWithImpl<$Res>
+class __$$_LoadingCopyWithImpl<$Res> extends _$MemeStateCopyWithImpl<$Res>
     implements _$$_LoadingCopyWith<$Res> {
   __$$_LoadingCopyWithImpl(_$_Loading _value, $Res Function(_$_Loading) _then)
       : super(_value, (v) => _then(v as _$_Loading));
@@ -218,11 +218,11 @@ class __$$_LoadingCopyWithImpl<$Res> extends _$CatStateCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_Loading implements _Loading {
-  _$_Loading();
+  const _$_Loading();
 
   @override
   String toString() {
-    return 'CatState.loading()';
+    return 'MemeState.loading()';
   }
 
   @override
@@ -239,8 +239,8 @@ class _$_Loading implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(List<Cat> cats) success,
-    required TResult Function(String e) failed,
+    required TResult Function(List<Meme> memes) memes,
+    required TResult Function(String error) error,
   }) {
     return loading();
   }
@@ -250,8 +250,8 @@ class _$_Loading implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<Cat> cats)? success,
-    TResult Function(String e)? failed,
+    TResult Function(List<Meme> memes)? memes,
+    TResult Function(String error)? error,
   }) {
     return loading?.call();
   }
@@ -261,8 +261,8 @@ class _$_Loading implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<Cat> cats)? success,
-    TResult Function(String e)? failed,
+    TResult Function(List<Meme> memes)? memes,
+    TResult Function(String error)? error,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -276,8 +276,8 @@ class _$_Loading implements _Loading {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(__success value) success,
-    required TResult Function(__Failed value) failed,
+    required TResult Function(_Memes value) memes,
+    required TResult Function(_Error value) error,
   }) {
     return loading(this);
   }
@@ -287,8 +287,8 @@ class _$_Loading implements _Loading {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(__success value)? success,
-    TResult Function(__Failed value)? failed,
+    TResult Function(_Memes value)? memes,
+    TResult Function(_Error value)? error,
   }) {
     return loading?.call(this);
   }
@@ -298,8 +298,8 @@ class _$_Loading implements _Loading {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(__success value)? success,
-    TResult Function(__Failed value)? failed,
+    TResult Function(_Memes value)? memes,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -309,84 +309,82 @@ class _$_Loading implements _Loading {
   }
 }
 
-abstract class _Loading implements CatState {
-  factory _Loading() = _$_Loading;
+abstract class _Loading implements MemeState {
+  const factory _Loading() = _$_Loading;
 }
 
 /// @nodoc
-abstract class _$$__successCopyWith<$Res> {
-  factory _$$__successCopyWith(
-          _$__success value, $Res Function(_$__success) then) =
-      __$$__successCopyWithImpl<$Res>;
-  $Res call({List<Cat> cats});
+abstract class _$$_MemesCopyWith<$Res> {
+  factory _$$_MemesCopyWith(_$_Memes value, $Res Function(_$_Memes) then) =
+      __$$_MemesCopyWithImpl<$Res>;
+  $Res call({List<Meme> memes});
 }
 
 /// @nodoc
-class __$$__successCopyWithImpl<$Res> extends _$CatStateCopyWithImpl<$Res>
-    implements _$$__successCopyWith<$Res> {
-  __$$__successCopyWithImpl(
-      _$__success _value, $Res Function(_$__success) _then)
-      : super(_value, (v) => _then(v as _$__success));
+class __$$_MemesCopyWithImpl<$Res> extends _$MemeStateCopyWithImpl<$Res>
+    implements _$$_MemesCopyWith<$Res> {
+  __$$_MemesCopyWithImpl(_$_Memes _value, $Res Function(_$_Memes) _then)
+      : super(_value, (v) => _then(v as _$_Memes));
 
   @override
-  _$__success get _value => super._value as _$__success;
+  _$_Memes get _value => super._value as _$_Memes;
 
   @override
   $Res call({
-    Object? cats = freezed,
+    Object? memes = freezed,
   }) {
-    return _then(_$__success(
-      cats == freezed
-          ? _value._cats
-          : cats // ignore: cast_nullable_to_non_nullable
-              as List<Cat>,
+    return _then(_$_Memes(
+      memes == freezed
+          ? _value._memes
+          : memes // ignore: cast_nullable_to_non_nullable
+              as List<Meme>,
     ));
   }
 }
 
 /// @nodoc
 
-class _$__success implements __success {
-  _$__success(final List<Cat> cats) : _cats = cats;
+class _$_Memes implements _Memes {
+  const _$_Memes(final List<Meme> memes) : _memes = memes;
 
-  final List<Cat> _cats;
+  final List<Meme> _memes;
   @override
-  List<Cat> get cats {
+  List<Meme> get memes {
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_cats);
+    return EqualUnmodifiableListView(_memes);
   }
 
   @override
   String toString() {
-    return 'CatState.success(cats: $cats)';
+    return 'MemeState.memes(memes: $memes)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$__success &&
-            const DeepCollectionEquality().equals(other._cats, _cats));
+            other is _$_Memes &&
+            const DeepCollectionEquality().equals(other._memes, _memes));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_cats));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_memes));
 
   @JsonKey(ignore: true)
   @override
-  _$$__successCopyWith<_$__success> get copyWith =>
-      __$$__successCopyWithImpl<_$__success>(this, _$identity);
+  _$$_MemesCopyWith<_$_Memes> get copyWith =>
+      __$$_MemesCopyWithImpl<_$_Memes>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(List<Cat> cats) success,
-    required TResult Function(String e) failed,
+    required TResult Function(List<Meme> memes) memes,
+    required TResult Function(String error) error,
   }) {
-    return success(cats);
+    return memes(this.memes);
   }
 
   @override
@@ -394,10 +392,10 @@ class _$__success implements __success {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<Cat> cats)? success,
-    TResult Function(String e)? failed,
+    TResult Function(List<Meme> memes)? memes,
+    TResult Function(String error)? error,
   }) {
-    return success?.call(cats);
+    return memes?.call(this.memes);
   }
 
   @override
@@ -405,12 +403,12 @@ class _$__success implements __success {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<Cat> cats)? success,
-    TResult Function(String e)? failed,
+    TResult Function(List<Meme> memes)? memes,
+    TResult Function(String error)? error,
     required TResult orElse(),
   }) {
-    if (success != null) {
-      return success(cats);
+    if (memes != null) {
+      return memes(this.memes);
     }
     return orElse();
   }
@@ -420,10 +418,10 @@ class _$__success implements __success {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(__success value) success,
-    required TResult Function(__Failed value) failed,
+    required TResult Function(_Memes value) memes,
+    required TResult Function(_Error value) error,
   }) {
-    return success(this);
+    return memes(this);
   }
 
   @override
@@ -431,10 +429,10 @@ class _$__success implements __success {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(__success value)? success,
-    TResult Function(__Failed value)? failed,
+    TResult Function(_Memes value)? memes,
+    TResult Function(_Error value)? error,
   }) {
-    return success?.call(this);
+    return memes?.call(this);
   }
 
   @override
@@ -442,51 +440,50 @@ class _$__success implements __success {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(__success value)? success,
-    TResult Function(__Failed value)? failed,
+    TResult Function(_Memes value)? memes,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
-    if (success != null) {
-      return success(this);
+    if (memes != null) {
+      return memes(this);
     }
     return orElse();
   }
 }
 
-abstract class __success implements CatState {
-  factory __success(final List<Cat> cats) = _$__success;
+abstract class _Memes implements MemeState {
+  const factory _Memes(final List<Meme> memes) = _$_Memes;
 
-  List<Cat> get cats;
+  List<Meme> get memes;
   @JsonKey(ignore: true)
-  _$$__successCopyWith<_$__success> get copyWith =>
+  _$$_MemesCopyWith<_$_Memes> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class _$$__FailedCopyWith<$Res> {
-  factory _$$__FailedCopyWith(
-          _$__Failed value, $Res Function(_$__Failed) then) =
-      __$$__FailedCopyWithImpl<$Res>;
-  $Res call({String e});
+abstract class _$$_ErrorCopyWith<$Res> {
+  factory _$$_ErrorCopyWith(_$_Error value, $Res Function(_$_Error) then) =
+      __$$_ErrorCopyWithImpl<$Res>;
+  $Res call({String error});
 }
 
 /// @nodoc
-class __$$__FailedCopyWithImpl<$Res> extends _$CatStateCopyWithImpl<$Res>
-    implements _$$__FailedCopyWith<$Res> {
-  __$$__FailedCopyWithImpl(_$__Failed _value, $Res Function(_$__Failed) _then)
-      : super(_value, (v) => _then(v as _$__Failed));
+class __$$_ErrorCopyWithImpl<$Res> extends _$MemeStateCopyWithImpl<$Res>
+    implements _$$_ErrorCopyWith<$Res> {
+  __$$_ErrorCopyWithImpl(_$_Error _value, $Res Function(_$_Error) _then)
+      : super(_value, (v) => _then(v as _$_Error));
 
   @override
-  _$__Failed get _value => super._value as _$__Failed;
+  _$_Error get _value => super._value as _$_Error;
 
   @override
   $Res call({
-    Object? e = freezed,
+    Object? error = freezed,
   }) {
-    return _then(_$__Failed(
-      e == freezed
-          ? _value.e
-          : e // ignore: cast_nullable_to_non_nullable
+    return _then(_$_Error(
+      error == freezed
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
               as String,
     ));
   }
@@ -494,43 +491,43 @@ class __$$__FailedCopyWithImpl<$Res> extends _$CatStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$__Failed implements __Failed {
-  _$__Failed(this.e);
+class _$_Error implements _Error {
+  const _$_Error(this.error);
 
   @override
-  final String e;
+  final String error;
 
   @override
   String toString() {
-    return 'CatState.failed(e: $e)';
+    return 'MemeState.error(error: $error)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$__Failed &&
-            const DeepCollectionEquality().equals(other.e, e));
+            other is _$_Error &&
+            const DeepCollectionEquality().equals(other.error, error));
   }
 
   @override
   int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(e));
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(error));
 
   @JsonKey(ignore: true)
   @override
-  _$$__FailedCopyWith<_$__Failed> get copyWith =>
-      __$$__FailedCopyWithImpl<_$__Failed>(this, _$identity);
+  _$$_ErrorCopyWith<_$_Error> get copyWith =>
+      __$$_ErrorCopyWithImpl<_$_Error>(this, _$identity);
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
-    required TResult Function(List<Cat> cats) success,
-    required TResult Function(String e) failed,
+    required TResult Function(List<Meme> memes) memes,
+    required TResult Function(String error) error,
   }) {
-    return failed(e);
+    return error(this.error);
   }
 
   @override
@@ -538,10 +535,10 @@ class _$__Failed implements __Failed {
   TResult? whenOrNull<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<Cat> cats)? success,
-    TResult Function(String e)? failed,
+    TResult Function(List<Meme> memes)? memes,
+    TResult Function(String error)? error,
   }) {
-    return failed?.call(e);
+    return error?.call(this.error);
   }
 
   @override
@@ -549,12 +546,12 @@ class _$__Failed implements __Failed {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
-    TResult Function(List<Cat> cats)? success,
-    TResult Function(String e)? failed,
+    TResult Function(List<Meme> memes)? memes,
+    TResult Function(String error)? error,
     required TResult orElse(),
   }) {
-    if (failed != null) {
-      return failed(e);
+    if (error != null) {
+      return error(this.error);
     }
     return orElse();
   }
@@ -564,10 +561,10 @@ class _$__Failed implements __Failed {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(__success value) success,
-    required TResult Function(__Failed value) failed,
+    required TResult Function(_Memes value) memes,
+    required TResult Function(_Error value) error,
   }) {
-    return failed(this);
+    return error(this);
   }
 
   @override
@@ -575,10 +572,10 @@ class _$__Failed implements __Failed {
   TResult? mapOrNull<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(__success value)? success,
-    TResult Function(__Failed value)? failed,
+    TResult Function(_Memes value)? memes,
+    TResult Function(_Error value)? error,
   }) {
-    return failed?.call(this);
+    return error?.call(this);
   }
 
   @override
@@ -586,22 +583,22 @@ class _$__Failed implements __Failed {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(__success value)? success,
-    TResult Function(__Failed value)? failed,
+    TResult Function(_Memes value)? memes,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
-    if (failed != null) {
-      return failed(this);
+    if (error != null) {
+      return error(this);
     }
     return orElse();
   }
 }
 
-abstract class __Failed implements CatState {
-  factory __Failed(final String e) = _$__Failed;
+abstract class _Error implements MemeState {
+  const factory _Error(final String error) = _$_Error;
 
-  String get e;
+  String get error;
   @JsonKey(ignore: true)
-  _$$__FailedCopyWith<_$__Failed> get copyWith =>
+  _$$_ErrorCopyWith<_$_Error> get copyWith =>
       throw _privateConstructorUsedError;
 }
